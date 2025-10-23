@@ -157,6 +157,24 @@ img {
     margin-right: 0.6rem;
 }
 
+/* Apply spacing for all paragraphs and h2 headers */
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1; /* makes paragraphs easier to read */
+    letter-spacing: 0.3px; /* small space between letters */
+    padding: 10px;
+}
+
+h2 {
+    margin-top: auto;
+    margin-bottom: 1px;
+    letter-spacing: 0.3px; /* for premium design look */
+    line-height: 1.4;
+    padding: 10px;
+}
+
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -589,5 +607,6 @@ main section {
 .large {
     padding: 1rem 1.4rem;
 }
+
 
 
