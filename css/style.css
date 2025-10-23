@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --dark: #2e2e2e;
     --silver: #b0b0b0;
     --light-silver: #f4f4f4;
@@ -29,15 +29,16 @@ html, body {
     line-height: 1.5;
 }
 
+    
+
 
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 1rem;
-    background-color: #1a1a1a  (--dark); /* Keeps content area light */
+    background-color: #1a1a1a (--dark); /* Keeps content area light */
     border-radius: var(--radius); /* Optional: soft corners */
     box-shadow: 0 0 12px rgba(0,0,0,0.2); /* Optional subtle shadow */
-    
 }
 
 
@@ -157,24 +158,6 @@ img {
     margin-right: 0.6rem;
 }
 
-/* Apply spacing for all paragraphs and h2 headers */
-p {
-    margin-top: 1px;
-    margin-bottom: 1px;
-    line-height: 1; /* makes paragraphs easier to read */
-    letter-spacing: 0.3px; /* small space between letters */
-    padding: 10px;
-}
-
-h2 {
-    margin-top: auto;
-    margin-bottom: 1px;
-    letter-spacing: 0.3px; /* for premium design look */
-    line-height: 1.4;
-    padding: 10px;
-}
-
-
 /* Buttons */
 .btn {
     display: inline-block;
@@ -217,6 +200,24 @@ main section {
     grid-template-columns: 1fr 400px;
     gap: 1.2rem;
 }
+
+/* Apply spacing for all paragraphs and h2 headers */
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 1; /* makes paragraphs easier to read */
+    letter-spacing: 0.3px; /* small space between letters */
+    padding: 10px;
+}
+
+h2 {
+    margin-top: auto;
+    margin-bottom: 1px;
+    letter-spacing: 0.3px; /* for premium design look */
+    line-height: 1.4;
+    padding: 10px;
+}
+
 
 .highlights .card {
     background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));
@@ -352,7 +353,7 @@ main section {
 }
 
 .footer-logo {
-    height: 60px;
+    height: 100px;
     width: auto;
     border-radius: 6px;
     object-fit: contain;
@@ -607,6 +608,3 @@ main section {
 .large {
     padding: 1rem 1.4rem;
 }
-
-
-
