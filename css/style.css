@@ -6,8 +6,8 @@
     --bg: #121212;
     --max-width: 1100px;
     --radius: 8px;
-    --font-title: 'Montserrat', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-title: 'Roboto Slab', sans-serif;
+    --font-body: 'Roboto Slab', sans-serif;
 }
 
 /* Global Reset */
@@ -589,4 +589,5 @@ main section {
 .large {
     padding: 1rem 1.4rem;
 }
+
 
