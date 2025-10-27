@@ -1,20 +1,101 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact | SchemaShine Metals</title>
-    <meta name="description" content="Contact SchemaShine Metals for scrap enquiries, quotes and export logistics. Based in the UK, exporting to Chennai, Nhava Sheva, Mundra, Goa and worldwide." />
-    <meta name="keywords" content="contact schemaShine, scrap quote, export enquiry, HMS quote, aluminium quote" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — SchemaShine Metals UK & Global Scrap Exports</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Get in touch with SchemaShine Metals for UK & global HMS 1 & 2, aluminium and non-ferrous scrap exports. Contact our team for quotes and logistics." />
+    <meta name="keywords" content="SchemaShine Metals contact, HMS 1 scrap, HMS 2 scrap, aluminium scrap, brass scrap, copper scrap, UK scrap exporters, export to India" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.schemashinemetals.com/contact.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact — SchemaShine Metals Scrap Exports" />
+    <meta property="og:description" content="Reach out to our team for inquiries on HMS & non-ferrous scrap exports from UK & worldwide." />
+    <meta property="og:image" content="images/contact-hero.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .contact-section {
+            padding: 3rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .contact-form, .contact-info {
+            flex: 1 1 400px;
+        }
+
+            .contact-form form {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .contact-form input, .contact-form textarea {
+                padding: 0.8rem;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+            }
+
+            .contact-form button {
+                padding: 1rem;
+                border-radius: 8px;
+                background: #555;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+                .contact-form button:hover {
+                    background: #333;
+                }
+
+            .contact-info img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    </style>
 </head>
-<body>
+<body class="contact">
+
+    <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /><span class="brand-text">SchemaShine Metals</span></a>
-            <button id="navToggle7" class="nav-toggle">☰</button>
-            <nav class="main-nav" id="mainNav7">
+            <a class="brand" href="index.html" aria-label="SchemaShine Metals home">
+                <img src="images/logo.png" alt="SchemaShine Metals logo" class="logo" />
+                <span class="brand-text">SchemaShine Metals</span>
+            </a>
+
+            <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2">☰</button>
+
+            <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -28,122 +109,144 @@
         </div>
     </header>
 
+    <main>
+        <!-- HERO -->
+        <!-- CONTACT SECTION -->
+       
+        <section class="hero contact-hero" style="background-image: url('images/contact.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-inner container fade-in">
+                <h1>Contact Us</h1>
+                <p>Reach out to SchemaShine Metals for UK & global scrap exports. HMS 1 & 2, aluminium, brass, copper and more.</p>
+                <section class="contact-section container fade-in">
+                    <!-- Form -->
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form id="contactForm">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                            <input type="email" id="email" name="email" placeholder="Your Email" required />
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" />
 
-    <main class="container content">
-        <h1>Contact Us</h1>
-        <p>Fill the form and our sales team will get back to you with prices, available stock and shipping options.</p>
+                            <label for="material">Select Material</label>
+                            <select id="material" name="material" required>
+                                <option value="" disabled selected>-- Select Material Type --</option>
+                                <option value="HMS 1">HMS 1 (Heavy Melting Scrap)</option>
+                                <option value="HMS 2">HMS 2 (Mixed / Shredded Scrap)</option>
+                                <option value="Aluminium">Aluminium (All Grades)</option>
+                                <option value="Brass">Brass Scrap</option>
+                                <option value="Copper">Copper Scrap</option>
+                                <option value="Mixed Non-Ferrous">Mixed Non-Ferrous</option>
+                                <option value="Others">Others / Custom Material</option>
+                            </select>
 
-        <form id="contactForm" class="contact-form" action="mailto:info@schemashinemetals.com" method="post" enctype="text/plain" onsubmit="return validateContactForm();">
-            <label for="name">Name *</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required>
+                            <textarea id="message" name="message" placeholder="Your Message or Requirements" rows="5" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
 
-            <label for="company">Company</label>
-            <input id="company" name="company" type="text" placeholder="Company name (optional)">
+                    <!-- Info -->
+                    <div class="contact-info">
+                        <h2>Our Contact</h2>
+                        <img src="images/contact-person.jpg" alt="Contact Person" />
+                        <p><strong>Email:</strong> <a href="mailto:schemashinemetals@gmail.com">schemashinemetals@gmail.com</a></p>
+                        <p><strong>Phone:</strong> +91 7330748444</p>
+                        <p>UK & Global Exports — HMS 1 & 2, Aluminium & Non-Ferrous Scrap</p>
+                        <p><strong>Address:</strong> UK & International Offices</p>
+                    </div>
 
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="+44...">
+ <section class="locations container">
+     <div class="location">
+         <img src="images/london.jpg" alt="UK Office (Swindon)">
+         <h3>United Kingdom – Swindon</h3>
+         <p>25 Industrial Estate, Swindon, UK</p>
+         <p>📞 +44 (0) 7736939489</p>
+     </div>
 
-            <label for="material">Material / Enquiry *</label>
-            <select id="material" name="material" required>
-                <option value="">Select material</option>
-                <option>HMS 1</option>
-                <option>HMS 2</option>
-                <option>Aluminium</option>
-                <option>Brass</option>
-                <option>Copper</option>
-                <option>Other</option>
-            </select>
+     <div class="location">
+         <img src="images/hyd.jpg" alt="Hyderabad Office">
+         <h3>India – Hyderabad</h3>
+         <p>4-8-22/134 UB Arcade, Hyderabad</p>
+         <p>📞 +91 7330748444</p>
+     </div>
 
-            <label for="message">Message / Specs *</label>
-            <textarea id="message" name="message" rows="6" placeholder="Quantity, grade, target port (e.g. Chennai), required delivery date..." required></textarea>
+     <div class="location">
+         <img src="images/india.jpg" alt="Mumbai Office">
+         <h3>India – Mumbai</h3>
+         <p>25 Paiga Industrial Zone, Mumbai</p>
+         <p>📞 +91 7337473999</p>
+     </div>
+ </section>
 
-            <div class="form-actions">
-                <button type="submit" class="btn primary">Send Enquiry</button>
-                <button type="reset" class="btn outline">Reset</button>
+                </section>
+
+
+
             </div>
-
-            <p class="form-note">Alternatively email us at <a href="mailto:info@schemashinemetals.com">info@schemashinemetals.com</a></p>
-        </form>
-
-
-        <section class="locations">
-            <div class="location">
-                <img src="images/london.jpg" alt="UK Office (Swindon)">
-                <h3>United Kingdom – Swindon</h3>
-                <p>25 Industrial Estate, Swindon, UK</p>
-                <p>Phone: +44 (0) 7736939489 </p>
-            </div>
-
-            <div class="location">
-                <img src="images/hyd.jpg" alt="Hyderabad Office">
-                <h3>India – Hyderabad</h3>
-                <p>4-8-22/134 UB ARCADE </p>
-                <p>Hyderabad - Telangana - India</p>
-                <p>Phone: +91 7330748444 </p>
-            </div>
-             <!-- Right: Contact -->
-            <div class="location" id="loc-mumbai">
-             <img src="images/india.jpg" alt="Mumbai Office">
-             <h3>India – Mumbai</h3>
-             <p>25 Paiga Industrial zone, Mumbai</p>
-             <p>Phone: +91 7337473999</p>
-            </div>
-   
         </section>
-    </main>
-    
 
+
+
+
+    </main>
+
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <!-- Left: Logo + Brand text -->
             <div class="footer-brand">
                 <img src="images/logo.png" alt="SchemaShine Metals logo" class="footer-logo" />
                 <div class="brand-text-wrap">
-                    <p class="brand-line">SchemaShine Metals</p>
-                    <p class="brand-sub">UK • Exporters to India and global markets</p>
-                    <p class="brand-sub">Reg No : </p>
-                    <p class="brand-sub">GST No : </p>
+                    <p class="brand-line"><b>SchemaShine Metals</b></p>
+                    <p class="brand-sub">Reliable • Transparent • Sustainabl</p>
+                    <p class="brand-sub">UK & Global Exporters of Scrap</p>
                 </div>
             </div>
 
-            <!-- left: Quick links -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="ferrous.html">Ferrous</a></li>
                     <li><a href="nonferrous.html">Non-Ferrous</a></li>
-                    <li><a href="export-logistics.html">Export &amp; Logistics</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="export-logistics.html">Export & Logistics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
 
-            <!-- center: Contact -->
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p>Based in UK — Exports to Chennai, Nhava Sheva (Mumbai), Mundra, Goa</p>
                 <p>Email: <a href="mailto:schemashinemetals@gmail.com">schemashinemetals@gmail.com</a></p>
-                <p>Phone: +91 7330748444 </p>
-                <p>Phone: +44 (0) 7736939489 </p>
+                <p>Phone: +44 (0)7736939489</p>
+                <p>Phone: +91 7330748444</p>
+                <p>UK & India Base — Global Exports</p>
             </div>
-  
-
         </div>
 
         <div class="footer-bottom container">
-            <p>© <span id="year"></span> SchemaShine Metals — All rights reserved </p>
+            <p>© <span id="year"></span> SchemaShine Metals — All rights reserved</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const phone = encodeURIComponent(document.getElementById('phone').value);
+            const material = encodeURIComponent(document.getElementById('material').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
+
+            const subject = `New Inquiry from ${name} - ${material}`;
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMaterial: ${material}%0D%0AMessage:%0D%0A${message}`;
+
+            window.location.href = `mailto:schemashinemetals@gmail.com?subject=${subject}&body=${body}`;
+        });
+    </script>
+
 
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
