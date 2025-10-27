@@ -1,0 +1,11 @@
+# robots.txt for SchemaShine Metals
+User-agent: *
+Allow: /
+
+# Block admin or system folders if any
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Sitemap for search engines
+Sitemap: https://www.schemashinemetals.com/sitemap.xml
