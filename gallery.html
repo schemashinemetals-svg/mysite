@@ -1,15 +1,31 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Stock Gallery | SchemaShine Metals</title>
-    <meta name="description" content="Explore live stock images of ferrous and non-ferrous metal scrap ready for export by SchemaShine Metals." />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — SchemaShine Metals UK & Global Scrap Exports</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="View our gallery of HMS 1 & 2, aluminium and non-ferrous scrap handled by SchemaShine Metals. UK & global sourcing with professional supervision." />
+    <meta name="keywords" content="SchemaShine Metals gallery, ferrous scrap, non-ferrous scrap, aluminium scrap, HMS 1, HMS 2, UK scrap exporters, export to India" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.schemashinemetals.com/gallery.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gallery — SchemaShine Metals Scrap Exports" />
+    <meta property="og:description" content="Explore our gallery of HMS & non-ferrous scrap, aluminium and brass, exported worldwide." />
+    <meta property="og:image" content="images/gallery-hero.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
     <style>
         body {
-            background: #f7f7f7;
             margin: 0;
             font-family: 'Open Sans', sans-serif;
         }
@@ -102,22 +118,32 @@
 
         h1 {
             text-align: center;
-            color: #003049;
+            color: floralwhite;
             margin-top: 2rem;
         }
 
         p {
             text-align: center;
-            color: #444;
+            color: floralwhite;
         }
     </style>
+
+
+
 </head>
-<body>
+<body class="gallery">
+
+    <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /><span class="brand-text">SchemaShine Metals</span></a>
-            <button id="navToggle6" class="nav-toggle">☰</button>
-            <nav class="main-nav" id="mainNav6">
+            <a class="brand" href="index.html" aria-label="SchemaShine Metals home">
+                <img src="images/logo.png" alt="SchemaShine Metals logo" class="logo" />
+                <span class="brand-text">SchemaShine Metals</span>
+            </a>
+
+            <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2">☰</button>
+
+            <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -132,42 +158,48 @@
     </header>
 
     <main>
-        <h1>Showcasing our current scrap inventory along with materials previously supplied to clients worldwide.</h1>
-        <p>Live view of ferrous and non-ferrous stock, sorted and ready for export.</p>
+        <!-- HERO -->
+        <!-- GALLERY -->
+        <section class="gallery-section container fade-in">
+            
+            <h1>Showcasing our current scrap inventory along with materials previously supplied to clients worldwide.</h1>
+            <p>Live view of ferrous and non-ferrous stock, sorted and ready for export.</p>
+        </section>
+            <div class="slider-container">
+                <div class="slides">
+                    <img src="images/gallery1.jpg" alt="Ferrous Scrap Yard">
+                    <img src="images/gallery2.jpg" alt="Non-Ferrous Aluminium Bundles">
+                    <img src="images/gallery3.jpg" alt="Loading Containers for Export">
+                    <img src="images/gallery4.jpg" alt="Port Operations in Chennai">
+                    <img src="images/gallery5.jpg" alt="Copper and Brass Scrap Handling">
+                    <img src="images/gallery6.jpg" alt="Shipping Containers at Nhava Sheva">
+                </div>
 
-        <div class="slider-container">
-            <div class="slides">
-                <img src="images/gallery1.jpg" alt="Ferrous Scrap Yard">
-                <img src="images/gallery2.jpg" alt="Non-Ferrous Aluminium Bundles">
-                <img src="images/gallery3.jpg" alt="Loading Containers for Export">
-                <img src="images/gallery4.jpg" alt="Port Operations in Chennai">
-                <img src="images/gallery5.jpg" alt="Copper and Brass Scrap Handling">
-                <img src="images/gallery6.jpg" alt="Shipping Containers at Nhava Sheva">
+                <div class="prev">&#10094;</div>
+                <div class="next">&#10095;</div>
             </div>
 
-            <div class="prev">&#10094;</div>
-            <div class="next">&#10095;</div>
-        </div>
+            <div class="thumbnails">
+                <img src="images/gallery1.jpg" alt="1" class="active">
+                <img src="images/gallery2.jpg" alt="2">
+                <img src="images/gallery3.jpg" alt="3">
+                <img src="images/gallery4.jpg" alt="4">
+                <img src="images/gallery5.jpg" alt="5">
+                <img src="images/gallery6.jpg" alt="6">
+            </div>
 
-        <div class="thumbnails">
-            <img src="images/gallery1.jpg" alt="1" class="active">
-            <img src="images/gallery2.jpg" alt="2">
-            <img src="images/gallery3.jpg" alt="3">
-            <img src="images/gallery4.jpg" alt="4">
-            <img src="images/gallery5.jpg" alt="5">
-            <img src="images/gallery6.jpg" alt="6">
-        </div>
+
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
             <div class="footer-brand">
                 <img src="images/logo.png" alt="SchemaShine Metals logo" class="footer-logo" />
                 <div class="brand-text-wrap">
-                    <p class="brand-line">SchemaShine Metals</p>
-                    <p class="brand-sub">UK • Exporters to India and global markets</p>
-                    <p class="brand-sub">Reg No : </p>
-                    <p class="brand-sub">GST No : </p>
+                    <p class="brand-line"><b>SchemaShine Metals</b></p>
+                    <p class="brand-sub">Reliable • Transparent • Sustainabl</p>
+                    <p class="brand-sub">UK & Global Exporters of Scrap</p>
                 </div>
             </div>
 
@@ -178,44 +210,48 @@
                     <li><a href="nonferrous.html">Non-Ferrous</a></li>
                     <li><a href="export-logistics.html">Export & Logistics</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
 
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p>Based in UK — Exports to Chennai, Nhava Sheva (Mumbai), Mundra, Goa</p>
                 <p>Email: <a href="mailto:schemashinemetals@gmail.com">schemashinemetals@gmail.com</a></p>
-                 <p>Phone: +91 7330748444 </p>
-                <p>Phone: +44 (0) 7736939489 </p>
+                <p>Phone: +44 (0)7736939489</p>
+                <p>Phone: +91 7330748444</p>
+                <p>UK & India Base — Global Exports</p>
             </div>
         </div>
+
         <div class="footer-bottom container">
             <p>© <span id="year"></span> SchemaShine Metals — All rights reserved</p>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
-    const slides = document.querySelector('.slides');
-    const images = document.querySelectorAll('.slides img');
-    const thumbs = document.querySelectorAll('.thumbnails img');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+        (function () {
+            const navToggle = document.getElementById('navToggle2');
+            const nav = document.getElementById('mainNav2');
+            navToggle.addEventListener('click', function () {
+                const open = nav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
 
-    let index = 0;
+            document.getElementById('year').textContent = new Date().getFullYear();
 
-    function showSlide(i) {
-      index = (i + images.length) % images.length;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-      thumbs.forEach((t, j) => t.classList.toggle('active', j === index));
-    }
+            const faders = document.querySelectorAll('.fade-in');
+            const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+                });
+            }, appearOptions);
 
-    next.addEventListener('click', () => showSlide(index + 1));
-    prev.addEventListener('click', () => showSlide(index - 1));
-    thumbs.forEach((t, i) => t.addEventListener('click', () => showSlide(i)));
-
-    // Auto slide (continuous loop)
-    setInterval(() => showSlide(index + 1), 4000);
+            faders.forEach(fader => appearOnScroll.observe(fader));
+        })();
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
-
