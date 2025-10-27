@@ -1,20 +1,56 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About Us | SchemaShine Metals</title>
-    <meta name="description" content="About SchemaShine Metals — 15+ years exporting HMS & non-ferrous scrap from UK to India. Learn about our team, values and export footprint across major Indian ports." />
-    <meta name="keywords" content="SchemaShine Metals about, scrap exporters UK, HMS exporters, aluminium exporter UK, export to Chennai, Nhava Sheva, Mundra" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us — SchemaShine Metals | UK & Global Scrap Exporters</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Learn about SchemaShine Metals — UK & global exporter of HMS 1 & 2, aluminium, and non-ferrous scrap. Trusted supplier with 15+ years of experience." />
+    <meta name="keywords" content="SchemaShine Metals, About, HMS 1, HMS 2, aluminium scrap, brass scrap, copper scrap, UK scrap exporters, global scrap suppliers" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.schemashinemetals.com/about.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About SchemaShine Metals — UK & Global Scrap Exporters" />
+    <meta property="og:description" content="UK & global exporter of HMS & non-ferrous scrap with 15+ years experience. Learn more about our company and values." />
+    <meta property="og:image" content="images/about-hero.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Fade-in animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+    </style>
 </head>
-<body>
+<body class="about">
+
+    <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo" class="logo" /><span class="brand-text">SchemaShine Metals</span></a>
-            <button id="navToggle2" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-            <nav class="main-nav" id="mainNav2">
+            <a class="brand" href="index.html" aria-label="SchemaShine Metals home">
+                <img src="images/logo.png" alt="SchemaShine Metals logo" class="logo" />
+                <span class="brand-text">SchemaShine Metals</span>
+            </a>
+
+            <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2">☰</button>
+
+            <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -28,96 +64,104 @@
         </div>
     </header>
 
-    <main class="container content">
-        <class="container header-inner">
-            <h1>About SchemaShine Metals</h1>
-       
-        <section>
-          <h1>About SchemaShine Metals</h1>
-       
-<section>
-        <p>
-            <strong>SchemaShine Metals</strong> is a trusted and professionally managed aluminium scrap importer and exporter
-            with over <strong>15 years of global trading experience</strong>. Established in the United Kingdom,
-            SchemaShine Metals has built a strong international network of suppliers and buyers across Europe,
-            the Middle East, and Asia. Our operations are centered on transparency, quality assurance, and
-            long-term business partnerships.
-        </p>
-    
-        <p>
-            Our founders, educated and trained in the UK metal recycling industry, have expanded our export operations
-            primarily to <strong>India</strong> through major ports including <strong>Chennai, Nhava Sheva (JNPT, Mumbai), Mundra, and Goa</strong>.
-            This global foundation enables us to offer <strong>competitive pricing, consistent supply, and certified quality</strong>
-            to foundries, alloy manufacturers, and industrial consumers.
-        </p>
-    
-        <p>
-            We supply <strong>primary and secondary aluminium scrap</strong> across a wide range of <strong>industrial grades and forms</strong>
-            including sheets, extrusions, turnings, and mixed alloys. Each consignment is thoroughly inspected,
-            processed, and certified according to buyer specifications to ensure purity and performance.
-        </p>
-        </section>
-        <section>
-            <h2>Our Mission</h2>
-            <p>
-                To connect reliable <strong>UK sourcing</strong> with responsible buyers worldwide by ensuring
-                <strong>traceable, compliant, and well-graded aluminium scrap shipments</strong> that meet and exceed buyer specifications.
-            </p>
-            <p>
-                We continuously strive to promote <strong>sustainable recycling practices</strong> and enhance global trade
-                efficiency by building trusted partnerships between suppliers and buyers in the aluminium scrap market.
-            </p>
-        </section>
-        <section>
-            <h2>What we export & manage</h2>
-            <ul>
-                <li>HMS 1 & HMS 2 (ferrous steel scrap)</li>
-                <li>Aluminium scrap (all common alloys & forms)</li>
-                <li>Brass, Copper & other non-ferrous materials</li>
-                <li>Custom blends as per mill requirements</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Quality & Compliance</h2>
-            <p>All loads are checked and supervised prior to shipment. Documentation and certificates (where required) are provided — quality inspections, photos, and weighbridge tickets are standard for shipments to India and other markets.</p>
-        </section>
-        <section>
-            <h2>Our Ports & Partners</h2>
-            <p>Primary ports of discharge: Chennai Port, Nhava Sheva (JNPT), Mundra, Goa. We coordinate with local agents for smooth customs clearance and logistics on arrival.</p>
-        </section>
-     </main>
+    <main>
+        <!-- Updated about.html -->
+        <section class="hero about-hero" style="background-image: url('images/about-hero.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-inner container fade-in">
+                <h1>About SchemaShine Metals</h1>
+                <p>UK & Global exporter of HMS 1 & 2, aluminium, brass, copper, and other non-ferrous scrap. Reliable sourcing and shipping worldwide for over 15 years.</p>
+                
+                <!-- Added Our Story content here -->
+                <div class="hero-story">
+                    <h2>Our Story</h2>
+                    <p>
+                        Founded with a vision to connect reliable UK and global scrap suppliers to international buyers,
+                        <strong>SchemaShine Metals</strong> has grown into a trusted exporter of ferrous and non-ferrous metals.
+                        Our expertise covers HMS 1 & 2, aluminium of all grades, brass, copper, and mixed non-ferrous scrap,
+                        with a focus on compliance, quality, and timely delivery.
+                    </p>
+                    <br />
+                    <div class="col highlights">
+                        <article>
+                            <h3>Our Mission</h3>
+                            <p>To provide seamless sourcing and export solutions for HMS and non-ferrous scrap globally while ensuring transparent, buyer-friendly operations.</p>
+                        </article>
+                        <br />
+                        <article>
+                            <h3>Our Strengths</h3>
+                            <ul class="premium-bullets">
+                                <li>15+ years of industry experience</li>
+                                <li>Trusted UK & global supplier network</li>
+                                <li>Full documentation & QA support</li>
+                                <li>Supervised loading & competitive pricing</li>
+                            </ul>
+                        </article>
 
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT CONTENT -->
+        <section class="about-content container fade-in">
+            <!--
+            <div class="col">
+                <h2>Our Story</h2>
+                <p>Hello </p>
+                </div>
+             -->
+            <div class="col highlights">
+
+                <article>
+                    <h3>Global Reach</h3>
+                    <p>Exports primarily to India (Chennai, Nhava Sheva, Mundra, Goa) and other international ports. We maintain strict compliance and grading at source to meet buyers' specifications worldwide.</p>
+                </article>
+            </div>
+        </section>
+
+    <!-- CTA -->
+            <section class="cta container fade-in">
+                <h3>Work With Us</h3>
+                <p>Contact SchemaShine Metals for sourcing HMS or non-ferrous scrap from the UK or global markets.</p>
+                <a href="contact.html" class="btn primary large">Get In Touch</a>
+            </section>
+</main>
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <!-- Left: Logo + Brand text -->
             <div class="footer-brand">
                 <img src="images/logo.png" alt="SchemaShine Metals logo" class="footer-logo" />
                 <div class="brand-text-wrap">
-                    <p class="brand-line">SchemaShine Metals</p>
-                    <p class="brand-sub">UK • Exporters to India and global markets</p>
-                    <p class="brand-sub">Reg No : </p>
-                    <p class="brand-sub">GST No : </p>
+                    <p class="brand-line"><b>SchemaShine Metals</b></p>
+                    <p class="brand-sub">Reliable • Transparent • Sustainabl</p>
+                    <p class="brand-sub">UK & Global Exporters of Scrap</p>
+
+
                 </div>
             </div>
 
-            <!-- Middle: Quick links -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="ferrous.html">Ferrous</a></li>
                     <li><a href="nonferrous.html">Non-Ferrous</a></li>
-                    <li><a href="export-logistics.html">Export &amp; Logistics</a></li>
+                    <li><a href="export-logistics.html">Export & Logistics</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
 
-            <!-- Right: Contact -->
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p>Based in UK — Exports to Chennai, Nhava Sheva (Mumbai), Mundra, Goa</p>
                 <p>Email: <a href="mailto:schemashinemetals@gmail.com">schemashinemetals@gmail.com</a></p>
-                <p>Phone: +91 7330748444 </p>
-                <p>Phone: +44 (0) 7736939489 </p>
+                <p>Phone: +44 (0)7736939489</p>
+                <p>Phone: +91 7330748444</p>
+                <p>UK & India Base — Global Exports</p>
             </div>
         </div>
 
@@ -126,8 +170,32 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script>
+        (function () {
+            const navToggle = document.getElementById('navToggle2');
+            const nav = document.getElementById('mainNav2');
+            navToggle.addEventListener('click', function () {
+                const open = nav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+
+            // set year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Fade-in animations
+            const faders = document.querySelectorAll('.fade-in');
+            const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => appearOnScroll.observe(fader));
+        })();
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
