@@ -78,17 +78,30 @@ HEADER - CENTERED LAYOUT
         align-items: center;
     }
 
+        /* Update the normal state of the navigation link */
         .main-nav ul li a {
             color: #f1f1f1;
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            /* Pre-define a transparent border to prevent shifting on hover */
+            border: 2px solid transparent;
         }
 
+            /* Update the hover state to change the border color */
             .main-nav ul li a.active,
             .main-nav ul li a:hover {
-                color: #F0C14B;
+                color: #0D1B2A;
+                background-color: #F0C14B;
+                /* Change the border color to yellow */
+                border: 2px solid #F0C14B;
+                /* Remove or comment out the box-shadow property */
+                /* box-shadow: 0 0 20px rgba(240,193,75,0.6); */
+                transform: translateY(-2px);
             }
+
 
     .main-nav.open {
         display: block;
@@ -345,7 +358,18 @@ FOOTER
 .footer-links,
 .footer-contact {
     flex: 0 1 auto;
+    font-size: 0.85rem
+
 }
+.brand-line b {
+    font-size: 1.25rem; /* Adjust this value as needed */
+}
+
+
+    .brand-line b:hover {
+        color: #f0c14b !important; /* Metallic gold hover */
+        text-decoration: underline !important;
+    }
 
 .footer-logo {
     max-height: 50px;
@@ -354,14 +378,15 @@ FOOTER
 
 .brand-text-wrap p {
     margin: 0.1rem 0;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 .footer-links h4,
 .footer-contact h4 {
     margin-bottom: 0.3rem;
-    color: #F0C14B;
+    color: ghostwhite;
     font-size: 1rem;
+
 }
 
 .footer-links ul,
@@ -370,6 +395,8 @@ FOOTER
     margin: 0;
     padding: 0;
 }
+
+ 
 
     .footer-links ul li,
     .footer-contact p {
@@ -391,6 +418,49 @@ FOOTER
     font-size: 0.85rem;
     color: #aaa;
 }
+
+/* Force email color in footer */
+.footer-contact a,
+.footer-contact a:link,
+.footer-contact a:visited,
+.footer-contact a:active {
+    color: #fff !important; /* White text */
+    text-decoration: none !important; /* Remove underline */
+}
+
+    .footer-contact a:hover {
+        color: #f0c14b !important; /* Metallic gold hover */
+        text-decoration: underline !important;
+    }
+/* Default styling */
+.contact-info {
+    color: #fff;
+}
+
+    .contact-info p,
+    .contact-info a,
+    .contact-info strong,
+    .contact-info h2 {
+        color: #fff;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    /* Remove link underline and default blue color */
+    .contact-info a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+        /* Individual hover effect — each line changes color when hovered */
+        .contact-info p:hover,
+        .contact-info a:hover,
+        .contact-info strong:hover,
+        .contact-info h2:hover {
+            color: #f0c14b; /* metallic yellow */
+            text-shadow: 0 0 8px rgba(240, 193, 75, 0.6);
+            cursor: pointer;
+        }
+
 
 /*--------------------------------------------------------------
 RESPONSIVE FOOTER
@@ -845,3 +915,4 @@ LIGHTBOX POPUP
     border-radius: 10px;
 }
 
+ 
