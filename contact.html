@@ -269,26 +269,8 @@
                             </div>
                         </footer>
 
-                        <!-- Scripts -->
-                        <script>
-                            document.getElementById('contactForm').addEventListener('submit', function (event) {
-                                event.preventDefault();
-
-                                const name = encodeURIComponent(document.getElementById('name').value);
-                                const email = encodeURIComponent(document.getElementById('email').value);
-                                const phone = encodeURIComponent(document.getElementById('phone').value);
-                                const material = encodeURIComponent(document.getElementById('material').value);
-                                const message = encodeURIComponent(document.getElementById('message').value);
-
-                                const subject = `New Inquiry from ${name} - ${material}`;
-                                const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMaterial: ${material}%0D%0AMessage:%0D%0A${message}`;
-
-                                window.location.href = `mailto:info@schemashinemetals.com?subject=${subject}&body=${body}`;
-                            });
-                        </script>
-
-
-                        <script src="js/main.js"></script>
+                      
 </body>
 </html>
+
 
