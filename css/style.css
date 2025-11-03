@@ -80,7 +80,6 @@ HEADER - CENTERED LAYOUT
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: metallic-shine 6s linear infinite;
-    text-transform: lowercase;
     font-weight: 700;
     text-decoration: none; /* removes underline */
 }
@@ -88,13 +87,13 @@ HEADER - CENTERED LAYOUT
 /* Gold shimmer */
 .gold-text {
     background-image: linear-gradient(90deg, #FFD700, #FFEC8B, #B8860B, #FFD700);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 25px rgba(255, 215, 0, 0.3);
+    text-shadow:  rgba(255, 215, 0, 0.3);
 }
 
 /* Silver shimmer */
 .silver-text {
     background-image: linear-gradient(90deg, #E8E8E8, #C0C0C0, #A9A9A9, #F5F5F5);
-    text-shadow: 0 0 10px rgba(192, 192, 192, 0.6), 0 0 25px rgba(255, 255, 255, 0.3);
+    text-shadow:  rgba(255, 255, 255, 0.3);
 }
 
 /* Continuous metallic shimmer animation */
@@ -1011,3 +1010,4 @@ LIGHTBOX POPUP
 }
 
  
+
