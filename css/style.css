@@ -43,7 +43,7 @@ HEADER - CENTERED LAYOUT
 
 /* keep or increase logo size */
 .brand img.logo {
-    height: 160px !important; /* increase or adjust up to 140px if needed */
+    height: 100px !important; /* increase or adjust up to 140px if needed */
     width: auto !important;
     margin: 0px;
     
@@ -1010,4 +1010,5 @@ LIGHTBOX POPUP
 }
 
  
+
 
