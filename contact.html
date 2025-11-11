@@ -3,27 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact — SchemaShine Metals UK & Global Scrap Exports</title>
+
+    <title>Contact — SchemaShine Metals | UK & Global Scrap Exporters</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="Get in touch with SchemaShine Metals for UK & global HMS 1 & 2, aluminium and non-ferrous scrap exports. Contact our team for quotes and logistics." />
-    <meta name="keywords" content="SchemaShine Metals contact, HMS 1 scrap, HMS 2 scrap, aluminium scrap, brass scrap, copper scrap, UK scrap exporters, export to India" />
+    <meta name="description" content="Contact SchemaShine Metals, a UK-based exporter of HMS 1 & 2, aluminium scrap, brass, copper and non-ferrous metals. Request pricing, material specs and shipment support." />
+    <meta name="keywords" content="contact SchemaShine Metals, UK scrap exporters, HMS scrap suppliers, aluminium scrap buyers, global metal scrap export, scrap to India shipments" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.schemashinemetals.com/contact.html" />
+    <link rel="canonical" href="https://www.schemashinemetals.com/contact" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Contact — SchemaShine Metals Scrap Exports" />
-    <meta property="og:description" content="Reach out to our team for inquiries on HMS & non-ferrous scrap exports from UK & worldwide." />
-    <meta property="og:image" content="images/contact-hero.jpg" />
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Contact — SchemaShine Metals | UK Scrap Exporters" />
+    <meta property="og:description" content="Reach out to SchemaShine Metals for enquiries on HMS & non-ferrous scrap exports from UK to global markets." />
+    <meta property="og:image" content="https://www.schemashinemetals.com/images/contact-hero.jpg" />
+    <meta property="og:url" content="https://www.schemashinemetals.com/contact" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_GB" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Page Style -->
     <style>
         .contact-section {
             padding: 3rem 0;
@@ -31,58 +36,34 @@
             flex-wrap: wrap;
             gap: 2rem;
         }
-
-        .contact-form, .contact-info {
-            flex: 1 1 400px;
+        .contact-form, .contact-info { flex: 1 1 400px; }
+        .contact-form form { display: flex; flex-direction: column; gap: 1rem; }
+        .contact-form input, .contact-form textarea {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
         }
-
-            .contact-form form {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .contact-form input, .contact-form textarea {
-                padding: 0.8rem;
-                border-radius: 8px;
-                border: 1px solid #ccc;
-                font-size: 1rem;
-            }
-
-            .contact-form button {
-                padding: 1rem;
-                border-radius: 8px;
-                background: #555;
-                color: #fff;
-                font-weight: 600;
-                cursor: pointer;
-                transition: background 0.3s;
-            }
-
-                .contact-form button:hover {
-                    background: #333;
-                }
-
-            .contact-info img {
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-                border-radius: 50%;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
+        .contact-form button {
+            padding: 1rem;
+            border-radius: 8px;
+            background: #555;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
         }
-
-            .fade-in.visible {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .contact-form button:hover { background: #333; }
+        .contact-info img {
+            width: 150px; height: 150px; object-fit: cover;
+            border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
+
+
 <body class="contact">
 
     <!-- Header -->
@@ -97,17 +78,18 @@
 
             <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2">☰</button>
 
-            <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="ferrous.html">Ferrous</a></li>
-                    <li><a href="nonferrous.html">Non-Ferrous</a></li>
-                    <li><a href="export-logistics.html">Export & Logistics</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
+           <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/ferrous">Ferrous</a></li>
+                <li><a href="/nonferrous">Non-Ferrous</a></li>
+                <li><a href="/export-logistics">Export & Logistics</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
         </div>
     </header>
 
@@ -272,3 +254,4 @@
                         
 </body>
 </html>
+
