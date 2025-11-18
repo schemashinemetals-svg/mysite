@@ -55,6 +55,7 @@ HEADER - CENTERED LAYOUT
     top: 0;
     position: center;
     left: 50%;
+    text-decoration: none !important;
 }
 
 /* keep brand text aligned nicely */
@@ -1009,6 +1010,107 @@ LIGHTBOX POPUP
     border-radius: 10px;
 }
 
- 
+ /*Catalog page css*/
+/* Catalog Page */
+.catalog-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Horizontal Product Card */
+.catalog-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.catalog-text {
+    flex: 1;
+}
+
+/* Product Image */
+.catalog-item img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Heading & Paragraph text BLACK */
+.catalog-text h2,
+.catalog-text h3,
+.catalog-text p {
+    color: black !important;
+    
+}
+
+.catalog-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.catalog-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Bigger Yellow Button */
+.btn-primary {
+    padding: 14px 34px; /* bigger button */
+    background: #f1c40f;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 17px; /* slightly bigger text */
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap; /* prevents breaking */
+    margin-top: 12px;
+}
+
+    .btn-primary:hover {
+        background: #d4ac0d;
+        color: black;
+    }
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .catalog-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .catalog-item img {
+            width: 100%;
+            height: auto;
+        }
+}
+
+
+/* RESPONSIVE (Mobile Stacks Vertically) */
+@media(max-width: 768px) {
+    .catalog-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .catalog-item img {
+            width: 100%;
+            height: auto;
+        }
+}
+
+
 
 
