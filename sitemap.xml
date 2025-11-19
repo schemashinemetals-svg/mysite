@@ -55,6 +55,13 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+   <!-- Blog Pages -->
+  <url>
+    <loc>https://www.schemashinemetals.com/Blogs</loc>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <!-- Contact Page -->
   <url>
     <loc>https://www.schemashinemetals.com/contact.html</loc>
