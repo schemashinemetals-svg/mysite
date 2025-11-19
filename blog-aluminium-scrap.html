@@ -1,111 +1,134 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluminium Scrap Blog — SchemaShine Metals</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@300;400;600&display=swap"
+          rel="stylesheet">
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+
+        /* Import Modern Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
         body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #CCCCCC;
+            background: linear-gradient(to bottom, #0A1A2F, #0D1B2A);
+            font-family: 'Inter', sans-serif;
+            color: #E4E4E4;
         }
 
-        h1  {
-            font-family: 'Audiowide', sans-serif;
-            color: white;
+        /* Titles */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.5px;
         }
 
-        p {
-            font-family: 'Open Sans', sans-serif;
-            color: white;
+        h1 {
+            color: #F5C542; /* Gold */
+            font-size: 2.4rem;
+            font-weight: 700;
         }
 
-        h2, h3  {
-            font-family: 'Audiowide', sans-serif;
-            color: #0D1B2A;
+        h2 {
+            color: #F5C542;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
         }
 
-        .blog-section h1, .blog-section h2, .blog-section h3 {
-            margin-top: 1.5rem;
+        h3 {
+            color: #FFFFFF;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 1.4rem;
         }
 
-        .blog-section p, .blog-section ul li {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 1rem;
+        /* Blog Section */
+        .blog-section {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 4rem auto;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
         }
 
-        .blog-section ul {
-            list-style: disc;
-            padding-left: 2rem;
-        }
+            .blog-section p {
+                color: #DADADA;
+                font-size: 1.15rem;
+                line-height: 1.85rem;
+                margin-bottom: 1.1rem;
+                font-family: 'Inter', sans-serif;
+            }
 
             .blog-section ul li {
-                margin-bottom: 0.5rem;
+                font-size: 1.13rem;
+                line-height: 1.7rem;
+                color: #E0E0E0;
+                margin-bottom: .6rem;
+                font-family: 'Inter', sans-serif;
             }
 
-        .blog-section strong {
-            color: black; /* gold accent */
-        }
-
-        .blog-section {
-            padding: 3rem 0;
-            max-width: 900px;
-            margin: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .blog-section {
-                padding: 2rem 1rem;
+            .blog-section strong {
+                color: #F5C542;
+                font-weight: 600;
             }
-        }
 
+        /* Hero Section */
         .hero-blogs {
-            background-color: #0D1B2A;
-            color: white;
+            background: linear-gradient(to right, #0D1B2A, #1B263B);
+            padding: 4rem 1rem;
             text-align: center;
-            padding: 3rem 1rem;
+            color: white;
         }
 
-            .hero-blogs h1 {
-                margin-bottom: 1rem;
+            .hero-blogs p {
+                color: #CFCFCF;
+                font-size: 1.25rem;
+                font-family: 'Inter', sans-serif;
             }
+
+
     </style>
+
 </head>
+
 <body>
 
     <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="SchemaShine Metals home">
+            <a class="brand" href="alluminium-scrap.html" aria-label="SchemaShine Metals home">
                 <img src="images/logo.png" alt="SchemaShine Metals logo" class="logo" />
                 <span class="brand-text">
                     <span class="gold-text">schemashine</span> <span class="silver-text">metals</span>
                 </span>
             </a>
 
-            <button id="navToggle2" class="nav-toggle" aria-expanded="false" aria-controls="mainNav2">☰</button>
+            <button id="navToggle2" class="nav-toggle" aria-expanded="false"
+                    aria-controls="mainNav2">
+                ☰
+            </button>
 
             <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
                 <ul>
-                 
-                    <li><a href="/index">Home</a></li>
-                    <li><a href="/about" class="active">About</a></li>
-                    <li><a href="/ferrous">Ferrous</a></li>
-                    <li><a href="/nonferrous">Non-Ferrous</a></li>
-                    <li><a href="/export-logistics">Export & Logistics</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/catalog">Catalog</a></li>
-                     <li><a href="/blogs"  class="active">Blogs</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="alluminium-scrap.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ferrous.html">Ferrous</a></li>
+                    <li><a href="nonferrous.html">Non-Ferrous</a></li>
+                    <li><a href="export-logistics.html">Export & Logistics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blogs.html" class="active">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -114,11 +137,12 @@
     <!-- Hero -->
     <section class="hero-blogs">
         <h1>Aluminium Scrap: The Ultimate Guide</h1>
-        <p>Your comprehensive guide to aluminium scrap types, applications, and tips for buyers globally.</p>
+        <p>Your complete guide to aluminium scrap types, pricing & global applications.</p>
     </section>
 
     <!-- Blog Section -->
     <section class="blog-section container fade-in">
+
         <p>Aluminium is one of the most versatile and widely used metals in the world. From automotive parts and beverage cans to construction materials and aerospace components, aluminium plays a vital role in multiple industries. For scrap buyers, understanding aluminium scrap types, pricing, and applications is essential to make informed decisions and maximize profits.</p>
 
         <h2>Why Aluminium Scrap Is Valuable</h2>
@@ -218,8 +242,8 @@
                 <img src="images/logo.png" alt="SchemaShine Metals logo" class="footer-logo" />
                 <div class="brand-text-wrap">
                     <p class="brand-line"><b>SchemaShine Metals</b></p>
-                    <p class="brand-sub">Reliable • Transparent • Sustainabl</p>
-                    <p class="brand-sub">UK & Global Exporters of Scrap</p>
+                    <p class="brand-sub">Reliable • Transparent • Sustainable</p>
+                    <p class="brand-sub">UK & India Base — Global Exports</p>
                 </div>
             </div>
 
@@ -239,7 +263,6 @@
                 <p>Email: <a href="mailto:info@schemashinemetals.com">info@schemashinemetals.com</a></p>
                 <p>Phone: +44 (0)7736939489</p>
                 <p>Phone: +91 7330748444</p>
-                <p>UK & India Base — Global Exports</p>
             </div>
         </div>
 
@@ -253,6 +276,5 @@
     </script>
 
 </body>
+
 </html>
-
-
