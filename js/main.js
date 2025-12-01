@@ -119,8 +119,5 @@ lightbox.addEventListener("click", e => {
 });
 
  
-<script>
-document.querySelector(".nav-toggle")?.addEventListener("click", () => {
-        document.querySelector(".main-nav").classList.toggle("open");
-});
-</script>
+
+
