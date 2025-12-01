@@ -117,3 +117,10 @@ lightbox.addEventListener("click", e => {
         lightbox.classList.remove("active");
     }
 });
+
+ 
+<script>
+document.querySelector(".nav-toggle")?.addEventListener("click", () => {
+        document.querySelector(".main-nav").classList.toggle("open");
+});
+</script>
