@@ -121,58 +121,63 @@
         font-size: 1.1em;
     }
 
-    table {
-        border-collapse: collapse;
-        width: 100%;
-        max-width: 900px;
-        background-color: white;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        border-radius: 8px;
-        overflow: hidden;
-    }
+   /* Updated Table Styles for High Visibility */
+  table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      background-color: #000000; /* Black background for the whole table */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #444; /* Subtle border to define shape */
+  }
 
-    thead {
-        background-color: #1a237e; /* Dark Navy Header */
-        color: white;
-    }
+  thead {
+      background-color: #0047AB; /* Vivid Blue Header */
+      color: #ffffff; /* White text */
+  }
 
-    th {
-        padding: 15px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.9em;
-    }
+  th {
+      padding: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.95rem;
+      border-bottom: 2px solid #003380;
+  }
 
-    td {
-        padding: 12px 15px;
-        border-bottom: 1px solid #eee;
-        text-align: left;
-    }
+  td {
+      padding: 15px;
+      border-bottom: 1px solid #333; /* Darker border for black background */
+      text-align: left;
+      color: #ffffff; /* White text for content visibility */
+      line-height: 1.6;
+  }
 
-    /* Centering the GST column text */
-    td:last-child, th:last-child {
-        text-align: center;
-        font-weight: bold;
-        color: #1a237e;
-    }
+      /* Highlighting HSN Codes (First Column) */
+      td:first-child {
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: bold;
+          color: #00D4FF; /* Electric Blue for HSN codes to stand out */
+          background-color: #111; /* Slightly lighter black for contrast */
+      }
 
-    /* Highlighting HSN Codes */
-    td:first-child {
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bold;
-        color: #555;
-        background-color: #f1f3f4;
-    }
+      /* Specific styling for the GST column */
+      td:last-child, th:last-child {
+          text-align: center;
+          font-weight: bold;
+          color: white#; /* Gold color for the tax rate to grab attention */
+      }
 
-    /* Zebra striping for rows */
-    tbody tr:nth-child(even) {
-        background-color: #fcfcfc;
-    }
+  /* Hover effect for readability */
+  tbody tr:hover {
+      background-color: #1a1a1a;
+  }
 
-    tbody tr:hover {
-        background-color: #f1f5ff;
-    }
-
+  /* Ensuring strong tags inside the table remain visible */
+  td strong {
+      color: #00D4FF;
+  }
 
   </style>
 
