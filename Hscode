@@ -267,6 +267,50 @@
             </tr>
         </tbody>
     </table>
+
+
+ <table>
+        <thead>
+            <tr>
+                <th>UK HS Code</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 7601 -->
+            <tr class="section-head"><td colspan="2">7601: ALUMINIUM AND ARTICLES THEREOF</td></tr>
+            <tr><td>7601000000</td><td>Unwrought aluminium</td></tr>
+            <tr><td>7601100000</td><td>Aluminium, not alloyed</td></tr>
+            <tr><td>7601200000</td><td>Aluminium alloys</td></tr>
+            <tr><td>7601201000</td><td>Primary</td></tr>
+            <tr><td>7601209000</td><td>Secondary</td></tr>
+            <tr><td>7601209100</td><td>In ingots or in liquid state</td></tr>
+            <tr><td>7601209900</td><td>Other</td></tr>
+            <tr><td>7601209910</td><td>Sheets and billets of secondary aluminium alloy containing lithium</td></tr>
+            
+            <!-- 7602 -->
+            <tr class="section-head"><td colspan="2">7602: Aluminium waste and scrap</td></tr>
+            <tr><td>7602001100</td><td>Waste: Turnings, shavings, chips, milling waste, sawdust and filings; waste of coloured, coated or bonded sheets and foil (&lt;0.2mm)</td></tr>
+            <tr><td>7602001900</td><td>Other (including factory rejects)</td></tr>
+            <tr><td>7602009000</td><td>Scrap</td></tr>
+
+            <!-- 7603 -->
+            <tr class="section-head"><td colspan="2">7603: Aluminium powders and flakes</td></tr>
+            <tr><td>7603100000</td><td>Powders of non-lamellar structure</td></tr>
+            <tr><td>7603200000</td><td>Powders of lamellar structure; flakes</td></tr>
+
+            <!-- 7604 -->
+            <tr class="section-head"><td colspan="2">7604: Aluminium bars, rods and profiles</td></tr>
+            <tr><td>7604100000</td><td>Of aluminium, not alloyed</td></tr>
+            <tr><td>7604101000</td><td>Bars and rods</td></tr>
+            <tr><td>7604109000</td><td>Profiles</td></tr>
+            <tr><td>7604109010</td><td>For use in certain types of aircraft (specific manufacture number)</td></tr>
+            <tr><td>7604109020</td><td>Conical shapes for reinforcing lateral rudders (aircraft use)</td></tr>
+            <tr><td>7604210000</td><td>Hollow profiles of aluminium alloys</td></tr>
+            <tr><td>7604291000</td><td>Bars and rods (alloyed)</td></tr>
+            <tr><td>7604299000</td><td>Profiles (alloyed)</td></tr>
+        </tbody>
+    </table>
     </section>
 
     <!-- Footer -->
