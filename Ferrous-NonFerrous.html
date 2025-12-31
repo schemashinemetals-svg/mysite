@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluminium Scrap Blog — SchemaShine Metals</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:wght@300;400;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* Import Modern Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            background: linear-gradient(to bottom, #0A1A2F, #0D1B2A);
+            font-family: 'Inter', sans-serif;
+            color: black;
+        }
+
+        /* Titles */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            color: gold; /* Gold */
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #0d1b2a;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            color: black;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 1.4rem;
+        }
+
+        /* Blog Section */
+        .blog-section {
+            background: white;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 4rem auto;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        }
+
+            .blog-section p {
+                color: black;
+                font-size: 1.15rem;
+                line-height: 1.85rem;
+                margin-bottom: 1.1rem;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .blog-section ul li {
+                font-size: 1.13rem;
+                line-height: 1.7rem;
+                color: black;
+                margin-bottom: .6rem;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .blog-section strong {
+                color: #db180c;
+                font-weight: 600;
+            }
+
+        /* Hero Section */
+        .hero-blogs {
+            background: linear-gradient(to right, #0D1B2A, #1B263B);
+            padding: 4rem 1rem;
+            text-align: center;
+            color: white;
+        }
+
+            .hero-blogs p {
+                color: white;
+                font-size: 1.25rem;
+                font-family: 'Inter', sans-serif;
+            }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers the content horizontally */
+            justify-content: center;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .intro {
+            max-width: 800px;
+            text-align: center; /* Centers the intro text */
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+            /* Styling the "Rich Text" in the intro */
+            .intro strong {
+                color: #d32f2f; /* Deep red for the 18% GST rate */
+                font-size: 1.1em;
+            }
+
+        /* Updated Table Styles for High Visibility */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 900px;
+            background-color: #000000; /* Black background for the whole table */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #444; /* Subtle border to define shape */
+        }
+
+        thead {
+            background-color: #0047AB; /* Vivid Blue Header */
+            color: #ffffff; /* White text */
+        }
+
+        th {
+            padding: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #003380;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #333; /* Darker border for black background */
+            text-align: left;
+            color: #ffffff; /* White text for content visibility */
+            line-height: 1.6;
+        }
+
+            /* Highlighting HSN Codes (First Column) */
+            td:first-child {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                color: #00D4FF; /* Electric Blue for HSN codes to stand out */
+                background-color: #111; /* Slightly lighter black for contrast */
+            }
+
+            /* Specific styling for the GST column */
+            td:last-child, th:last-child {
+                text-align: center;
+                font-weight: bold;
+                color: white#; /* Gold color for the tax rate to grab attention */
+            }
+
+        /* Hover effect for readability */
+        tbody tr:hover {
+            background-color: #1a1a1a;
+        }
+
+        /* Ensuring strong tags inside the table remain visible */
+        td strong {
+            color: #00D4FF;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="SchemaShine Metals home">
+                <img src="images/logo.png" alt="SchemaShine Metals logo" class="logo" />
+                <span class="brand-text">
+                    <span class="gold-text">schemashine</span> <span class="silver-text">metals</span>
+                </span>
+            </a>
+
+            <button id="navToggle2" class="nav-toggle" aria-expanded="false"
+                    aria-controls="mainNav2">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav2" aria-label="Primary navigation">
+                <ul>
+
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/about" class="active">About</a></li>
+                    <li><a href="/ferrous">Ferrous</a></li>
+                    <li><a href="/nonferrous">Non-Ferrous</a></li>
+                    <li><a href="/export-logistics">Export & Logistics</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="/blogs" class="active">Blogs</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <!-- BLOG START HERE -->
+ 
+ 
+    <section style="font-family: 'Segoe UI', Arial, sans-serif; padding: 100px 20px; background: #f3f4f6; position: relative; overflow: hidden;">
+        <!-- Subtle metal texture background -->
+        <div style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/brushed-aluminium.png');
+      opacity: 0.08;
+      z-index: 0;
+      pointer-events: none;
+  "></div>
+
+        <div style="max-width: 1100px; margin: auto; text-align: center; position: relative; z-index: 1;">
+
+            <h2 style="font-size: 42px; color: #1f2937; margin-bottom: 20px; letter-spacing: 1px;">Ferrous vs Non-Ferrous Metals</h2>
+            <p style="color: #4b5563; font-size: 16px; max-width: 750px; margin: 0 auto 70px;">
+                Learn the difference between <strong>ferrous</strong> and <strong>non-ferrous</strong> metals, their industrial applications, and how to segregate scrap efficiently for maximum value.
+            </p>
+
+            <!-- Cards Container -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 70px;">
+
+                <!-- Ferrous Card -->
+                <div style="
+        background: linear-gradient(145deg, #e5e7eb, #d1d5db);
+        background-size: 400% 400%;
+        padding: 35px;
+        border-radius: 16px;
+        width: 340px;
+        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        text-align: left;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+      " onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.12)'">
+
+                    <!-- Metallic shine -->
+                    <div style="
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
+          transform: rotate(25deg);
+          animation: shine 3s infinite linear;
+          z-index: 0;
+        "></div>
+
+                    <!-- Ferrous Icon -->
+                    <div style="text-align: center; position: relative; z-index: 1; margin-bottom: 20px;">
+                        <img src="https://img.icons8.com/fluency/64/000000/steel.png" alt="Steel Icon" style="width: 60px; height: 60px;">
+                    </div>
+
+                    <h3 style="font-size: 26px; color: #111827; margin-bottom: 12px; position: relative; z-index: 1;">Ferrous Metals</h3>
+                    <p style="color: #374151; font-size: 15px; margin-bottom: 10px; position: relative; z-index: 1;">
+                        Metals containing <strong>iron</strong>, magnetic, strong, but prone to rust. Examples: <em>Steel, Cast Iron, Wrought Iron</em>.
+                    </p>
+                    <p style="font-weight: bold; color: #111827; margin-bottom: 5px; position: relative; z-index: 1;">Uses:</p>
+                    <ul style="color: #374151; font-size: 14px; padding-left: 20px; position: relative; z-index: 1;">
+                        <li>Construction: beams, rods, and frames</li>
+                        <li>Automotive parts</li>
+                        <li>Machinery and industrial infrastructure</li>
+                    </ul>
+                    <p style="color: #374151; font-size: 14px; margin-top: 10px; position: relative; z-index: 1;">
+                        <strong>Additional Notes:</strong> Ferrous scrap can be recycled multiple times. Rusted scrap should be cleaned or treated to improve market value.
+                    </p>
+                </div>
+
+                <!-- Non-Ferrous Card -->
+                <!-- Non-Ferrous Card Expanded -->
+                <div style="
+    background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+    background-size: 400% 400%;
+    padding: 35px;
+    border-radius: 16px;
+    width: 340px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.12)'">
+
+                    <!-- Metallic shine -->
+                    <div style="
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
+    transform: rotate(25deg);
+    animation: shine 3s infinite linear;
+    z-index: 0;
+  "></div>
+
+                    <!-- Non-Ferrous Icon -->
+                    <div style="text-align: center; position: relative; z-index: 1; margin-bottom: 20px;">
+                        <img src="https://img.icons8.com/fluency/64/000000/copper.png" alt="Copper Icon" style="width: 60px; height: 60px;">
+                    </div>
+
+                    <h3 style="font-size: 26px; color: #000000; margin-bottom: 12px; position: relative; z-index: 1;">Non-Ferrous Metals</h3>
+                    <p style="color: #374151; font-size: 15px; margin-bottom: 15px; position: relative; z-index: 1;">
+                        Metals <strong>without iron</strong>, non-magnetic, corrosion-resistant, and lightweight. Examples include <em>Aluminum, Copper, Brass, Lead, Zinc</em>.
+                    </p>
+
+                    <!-- Detailed Types -->
+                    <div style="position: relative; z-index: 1;">
+
+                        <!-- Aluminum -->
+                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Aluminum</p>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Lightweight, corrosion-resistant, used in <em>aircraft parts, beverage cans, window frames</em>.
+                        </p>
+
+                        <!-- Copper -->
+                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Copper</p>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Excellent conductor of electricity, used in <em>electrical wiring, motors, plumbing</em>.
+                        </p>
+
+                        <!-- Brass -->
+                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Brass</p>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Alloy of copper and zinc, corrosion-resistant, used in <em>fittings, musical instruments, decorative items</em>.
+                        </p>
+
+                        <!-- Lead -->
+                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Lead</p>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Dense and malleable, used in <em>batteries, radiation shields, solder</em>.
+                        </p>
+
+                        <!-- Zinc -->
+                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Zinc</p>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Corrosion-resistant, used in <em>galvanized steel coatings, die-casting alloys</em>.
+                        </p>
+
+                    </div>
+
+                    <p style="color: #374151; font-size: 14px; margin-top: 10px; position: relative; z-index: 1;">
+                        <strong>Additional Notes:</strong> Non-ferrous metals usually have high market value and can be recycled multiple times without losing quality.
+                    </p>
+
+                </div>
+
+
+                <!-- Segregation Section -->
+                <div style="text-align: left; max-width: 750px; margin: auto;">
+                    <h3 style="font-size: 30px; color: #111827; margin-bottom: 15px;">How to Segregate Scrap Metals</h3>
+                    <p style="color: #4b5563; font-size: 15px; margin-bottom: 20px;">
+                        Correct segregation improves scrap value, reduces contamination, and increases recycling efficiency.
+                    </p>
+                    <ul style="color: #4b5563; font-size: 15px; padding-left: 20px; line-height: 1.8;">
+                        <li>Use a <strong>magnet</strong> to separate ferrous metals from non-ferrous metals.</li>
+                        <li>Identify metals by <strong>color and weight</strong>: copper is reddish, aluminum is light silver-white.</li>
+                        <li>Separate by <strong>type or alloy</strong> to maintain recycling quality.</li>
+                        <li>Remove all <strong>non-metal contaminants</strong> such as plastics, rubber, or wood.</li>
+                        <li>Store ferrous metals in covered areas; non-ferrous metals can be kept in dry open spaces.</li>
+                        <li>Label different types of scrap clearly to help buyers or recyclers identify them quickly.</li>
+                        <li>Regularly clean and sort scrap to prevent mixing and reduce losses.</li>
+                        <li>Track scrap market trends: some non-ferrous metals like copper and aluminum have fluctuating prices, which can affect profitability.</li>
+                    </ul>
+                </div>
+
+                <!-- Benefits Section -->
+                <div style="text-align: center; max-width: 750px; margin: 50px auto 0;">
+                    <h3 style="font-size: 28px; color: #111827; margin-bottom: 15px;">Benefits of Proper Scrap Management</h3>
+                    <ul style="list-style: none; padding-left: 0; color: #374151; font-size: 15px; line-height: 1.8;">
+                        <li>✅ Increases resale value of scrap metals</li>
+                        <li>✅ Reduces environmental impact by enabling recycling</li>
+                        <li>✅ Helps in maintaining a clean and organized scrap yard</li>
+                        <li>✅ Improves efficiency in transport and storage</li>
+                        <li>✅ Ensures compliance with local recycling regulations</li>
+                    </ul>
+                </div>
+
+                <!-- Conclusion -->
+                <p style="color: #4b5563; font-size: 16px; max-width: 750px; margin: 60px auto 0; text-align: center;">
+                    Understanding ferrous and non-ferrous metals, their industrial uses, and proper segregation is vital for scrap recycling businesses.
+                    Effective handling and recycling not only maximize profits but also support a sustainable metal industry.
+                </p>
+
+            </div>
+
+        <!-- Animations -->
+        <style>
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes shine {
+                0% {
+                    transform: rotate(25deg) translateX(-100%);
+                }
+
+                100% {
+                    transform: rotate(25deg) translateX(100%);
+                }
+            }
+        </style>
+    </section>
+
+ 
+  <!-- BLOG END HERE -->
+   
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="SchemaShine Metals logo" class="footer-logo" />
+                <div class="brand-text-wrap">
+                    <p class="brand-line"><b>SchemaShine Metals</b></p>
+                    <p class="brand-sub">Reliable • Transparent • Sustainable</p>
+                    <p class="brand-sub">UK & India Base — Global Exports</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="ferrous.html">Ferrous</a></li>
+                    <li><a href="nonferrous.html">Non-Ferrous</a></li>
+                    <li><a href="export-logistics.html">Export & Logistics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:info@schemashinemetals.com">info@schemashinemetals.com</a></p>
+                <p>Phone: +44 (0)7736939489</p>
+                <p>Phone: +91 7330748444</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>© <span id="year"></span> SchemaShine Metals — All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
