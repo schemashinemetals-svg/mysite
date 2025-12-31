@@ -219,8 +219,9 @@
         </div>
     </header>
  <!-- BLOG START HERE -->
- 
- 
+
+        <!-- Blog Start Here -->
+
     <section style="font-family: 'Segoe UI', Arial, sans-serif; padding: 100px 20px; background: #f3f4f6; position: relative; overflow: hidden;">
         <!-- Subtle metal texture background -->
         <div style="
@@ -244,57 +245,96 @@
 
             <!-- Cards Container -->
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 70px;">
-
-                <!-- Ferrous Card -->
+                <!-- Ferrous Metals Card with Inline Icons and Detailed Info -->
                 <div style="
-        background: linear-gradient(145deg, #e5e7eb, #d1d5db);
-        background-size: 400% 400%;
-        padding: 35px;
-        border-radius: 16px;
-        width: 340px;
-        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-        text-align: left;
-        transition: transform 0.3s, box-shadow 0.3s;
-        position: relative;
-        overflow: hidden;
-      " onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.12)'">
+    background: linear-gradient(145deg, #e5e7eb, #d1d5db);
+    background-size: 400% 400%;
+    padding: 35px;
+    border-radius: 16px;
+    width: 340px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.12)'">
 
                     <!-- Metallic shine -->
                     <div style="
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
-          transform: rotate(25deg);
-          animation: shine 3s infinite linear;
-          z-index: 0;
-        "></div>
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
+    transform: rotate(25deg);
+    animation: shine 3s infinite linear;
+    z-index: 0;
+  "></div>
 
-                    <!-- Ferrous Icon -->
+                    <!-- Ferrous Main Icon -->
                     <div style="text-align: center; position: relative; z-index: 1; margin-bottom: 20px;">
-                        <img src="https://img.icons8.com/fluency/64/000000/steel.png" alt="Steel Icon" style="width: 60px; height: 60px;">
+                        <!-- Steel Coil SVG -->
+                        <svg width="60" height="60" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="28" stroke="#374151" stroke-width="4" fill="#9CA3AF" />
+                            <circle cx="32" cy="32" r="12" fill="#6B7280" />
+                        </svg>
                     </div>
 
-                    <h3 style="font-size: 26px; color: #111827; margin-bottom: 12px; position: relative; z-index: 1;">Ferrous Metals</h3>
-                    <p style="color: #374151; font-size: 15px; margin-bottom: 10px; position: relative; z-index: 1;">
-                        Metals containing <strong>iron</strong>, magnetic, strong, but prone to rust. Examples: <em>Steel, Cast Iron, Wrought Iron</em>.
+                    <h3 style="font-size: 26px; color: #000000; margin-bottom: 12px; position: relative; z-index: 1;">Ferrous Metals</h3>
+                    <p style="color: #374151; font-size: 15px; margin-bottom: 15px; position: relative; z-index: 1;">
+                        Metals containing <strong>iron</strong>, magnetic, strong, but prone to rust. Common types include <em>Steel, Cast Iron, Wrought Iron</em>.
                     </p>
-                    <p style="font-weight: bold; color: #111827; margin-bottom: 5px; position: relative; z-index: 1;">Uses:</p>
-                    <ul style="color: #374151; font-size: 14px; padding-left: 20px; position: relative; z-index: 1;">
-                        <li>Construction: beams, rods, and frames</li>
-                        <li>Automotive parts</li>
-                        <li>Machinery and industrial infrastructure</li>
-                    </ul>
+
+                    <!-- Detailed Types with Inline SVG Icons -->
+                    <div style="position: relative; z-index: 1;">
+
+                        <!-- Steel -->
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#6B7280" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <rect width="64" height="64" rx="4" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Steel</p>
+                        </div>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Strong, versatile, widely used in <em>construction, automotive, and machinery</em>.
+                        </p>
+
+                        <!-- Cast Iron -->
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#4B5563" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <rect x="8" y="8" width="48" height="48" rx="4" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Cast Iron</p>
+                        </div>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Hard and brittle, ideal for <em>pipes, cookware, machinery bases</em>.
+                        </p>
+
+                        <!-- Wrought Iron -->
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#9CA3AF" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <circle cx="32" cy="32" r="12" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Wrought Iron</p>
+                        </div>
+                        <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
+                            Malleable, corrosion-resistant, used in <em>fences, gates, decorative work</em>.
+                        </p>
+
+                    </div>
+
                     <p style="color: #374151; font-size: 14px; margin-top: 10px; position: relative; z-index: 1;">
-                        <strong>Additional Notes:</strong> Ferrous scrap can be recycled multiple times. Rusted scrap should be cleaned or treated to improve market value.
+                        <strong>Additional Notes:</strong> Ferrous metals are magnetic and generally cheaper than non-ferrous. Proper sorting improves recycling efficiency and scrap value.
                     </p>
+
                 </div>
 
+
+
                 <!-- Non-Ferrous Card -->
-                <!-- Non-Ferrous Card Expanded -->
+                <!-- Non-Ferrous Card with Inline SVG Icons -->
                 <div style="
     background: linear-gradient(145deg, #e0f2fe, #bae6fd);
     background-size: 400% 400%;
@@ -322,9 +362,12 @@
     z-index: 0;
   "></div>
 
-                    <!-- Non-Ferrous Icon -->
+                    <!-- Non-Ferrous Main Icon -->
                     <div style="text-align: center; position: relative; z-index: 1; margin-bottom: 20px;">
-                        <img src="https://img.icons8.com/fluency/64/000000/copper.png" alt="Copper Icon" style="width: 60px; height: 60px;">
+                        <!-- Copper SVG -->
+                        <svg width="60" height="60" viewBox="0 0 64 64" fill="#B87333" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="#7F4B1D" stroke-width="4" />
+                        </svg>
                     </div>
 
                     <h3 style="font-size: 26px; color: #000000; margin-bottom: 12px; position: relative; z-index: 1;">Non-Ferrous Metals</h3>
@@ -332,35 +375,60 @@
                         Metals <strong>without iron</strong>, non-magnetic, corrosion-resistant, and lightweight. Examples include <em>Aluminum, Copper, Brass, Lead, Zinc</em>.
                     </p>
 
-                    <!-- Detailed Types -->
+                    <!-- Detailed Types with SVG icons -->
                     <div style="position: relative; z-index: 1;">
 
                         <!-- Aluminum -->
-                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Aluminum</p>
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#A6A6A6" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <rect width="64" height="64" rx="8" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Aluminum</p>
+                        </div>
                         <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
                             Lightweight, corrosion-resistant, used in <em>aircraft parts, beverage cans, window frames</em>.
                         </p>
 
                         <!-- Copper -->
-                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Copper</p>
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#B87333" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <circle cx="32" cy="32" r="16" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Copper</p>
+                        </div>
                         <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
                             Excellent conductor of electricity, used in <em>electrical wiring, motors, plumbing</em>.
                         </p>
 
                         <!-- Brass -->
-                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Brass</p>
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#FFD700" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <polygon points="32,4 60,60 4,60" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Brass</p>
+                        </div>
                         <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
                             Alloy of copper and zinc, corrosion-resistant, used in <em>fittings, musical instruments, decorative items</em>.
                         </p>
 
                         <!-- Lead -->
-                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Lead</p>
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#6E6E6E" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <rect x="12" y="12" width="40" height="40" rx="4" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Lead</p>
+                        </div>
                         <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
                             Dense and malleable, used in <em>batteries, radiation shields, solder</em>.
                         </p>
 
                         <!-- Zinc -->
-                        <p style="font-weight: bold; color: #000000; margin: 8px 0 2px;">Zinc</p>
+                        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+                            <svg width="20" height="20" viewBox="0 0 64 64" fill="#7CB342" xmlns="http://www.w3.org/2000/svg" style="margin-right: 6px;">
+                                <polygon points="32,4 60,32 32,60 4,32" />
+                            </svg>
+                            <p style="font-weight: bold; color: #000000; margin: 0;">Zinc</p>
+                        </div>
                         <p style="color: #374151; font-size: 14px; margin-bottom: 8px;">
                             Corrosion-resistant, used in <em>galvanized steel coatings, die-casting alloys</em>.
                         </p>
@@ -372,6 +440,7 @@
                     </p>
 
                 </div>
+
 
 
                 <!-- Segregation Section -->
@@ -439,6 +508,8 @@
             }
         </style>
     </section>
+ 
+  
 
  
   <!-- BLOG END HERE -->
