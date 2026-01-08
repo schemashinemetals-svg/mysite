@@ -4,7 +4,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://www.schemashinemetals.com/index.html</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- About Page -->
   <url>
     <loc>https://www.schemashinemetals.com/about.html</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Ferrous Scrap Page -->
   <url>
     <loc>https://www.schemashinemetals.com/ferrous.html</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Non-Ferrous Scrap Page -->
   <url>
     <loc>https://www.schemashinemetals.com/nonferrous.html</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -51,14 +51,14 @@
    <!-- Catalog Page -->
   <url>
     <loc>https://www.schemashinemetals.com/catalog</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
    <!-- Blog Pages -->
   <url>
     <loc>https://www.schemashinemetals.com/Blogs</loc>
-    <lastmod>2025-10-27</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
