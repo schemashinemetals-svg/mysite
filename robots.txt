@@ -1,11 +1,22 @@
 # robots.txt for SchemaShine Metals
+
+# Allow all search engines full access
 User-agent: *
 Allow: /
 
-# Block admin or system folders if any
+# Block sensitive or system folders (if they exist)
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /admin/
 
-# Sitemap for search engines
-Sitemap: https://www.schemashinemetals.com/sitemap.xml
+# Prevent indexing of duplicate or unnecessary URL variations
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*?*  # optional if query strings are not needed
+
+# Sitemap location (match your non-www canonical URLs)
+Sitemap: https://schemashinemetals.com/sitemap.xml
+
+# Optional: Specify crawl-delay (if server is slow)
+# Crawl-delay: 5
+
