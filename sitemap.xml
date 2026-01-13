@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Home Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/index.html</loc>
+    <loc>https://schemashinemetals.com/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/about.html</loc>
+    <loc>https://schemashinemetals.com/about.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
   <!-- Ferrous Scrap Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/ferrous.html</loc>
+    <loc>https://schemashinemetals.com/ferrous.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -27,7 +27,7 @@
 
   <!-- Non-Ferrous Scrap Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/nonferrous.html</loc>
+    <loc>https://schemashinemetals.com/nonferrous.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
   <!-- Gallery Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/gallery.html</loc>
+    <loc>https://schemashinemetals.com/gallery.html</loc>
     <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -43,28 +43,31 @@
 
   <!-- Export & Logistics Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/export-logistics.html</loc>
+    <loc>https://schemashinemetals.com/export-logistics.html</loc>
     <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-   <!-- Catalog Page -->
+
+  <!-- Catalog Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/catalog</loc>
+    <loc>https://schemashinemetals.com/catalog.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-   <!-- Blog Pages -->
+
+  <!-- Blog Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/Blogs</loc>
+    <loc>https://schemashinemetals.com/blogs.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+
   <!-- Contact Page -->
   <url>
-    <loc>https://www.schemashinemetals.com/contact.html</loc>
+    <loc>https://schemashinemetals.com/contact.html</loc>
     <lastmod>2025-10-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
