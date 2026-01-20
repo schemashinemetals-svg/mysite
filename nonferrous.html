@@ -177,7 +177,16 @@
 
 <main>
     <!-- HERO -->
-    <section class="hero nonferrous-hero" style="background-image: url('images/nonferrous.jpg');">
+  <section class="hero nonferrous-hero" style="
+  background: linear-gradient(135deg, 
+    #333333 0%, /* Very Dark Gray */
+    #555555 25%, /* Medium Gray */
+    #AAAAAA 50%, /* Silver Highlight */
+    #555555 75%, 
+    #333333 100%);
+  color: #fff; /* Default to white text, use specific spans for black text on silver sections */
+  border-left: 5px solid #AAAAAA; /* Optional accent line */">
+
         <div class="hero-overlay"></div>
         <div class="hero-inner container fade-in">
            <!-- H1 Tag (Place inside <body>) -->
@@ -360,6 +369,7 @@
 
 </body>
 </html>
+
 
 
 
