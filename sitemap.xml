@@ -33,6 +33,14 @@
     <priority>0.9</priority>
   </url>
 
+   <!-- Alluminium Scrap Page -->
+  <url>
+    <loc>https://schemashinemetals.com/aluminium-scrap.html</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Gallery Page -->
   <url>
     <loc>https://schemashinemetals.com/gallery.html</loc>
