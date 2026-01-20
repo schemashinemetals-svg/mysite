@@ -1158,6 +1158,791 @@ FULLY RESPONSIVE MOBILE HEADER (iPhone Optimized)
     }
 }
 
+/* Non Ferrous Dropdown Menu */
+
+/* === FIX NON-FERROUS DROPDOWN VERTICAL LIST === */
+
+.main-nav ul li.dropdown {
+    position: relative;
+}
+
+    /* Dropdown container */
+    .main-nav ul li.dropdown > .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block; /* IMPORTANT */
+        flex-direction: column; /* OVERRIDE flex */
+        background: #111;
+        min-width: 240px;
+        padding: 8px 0;
+        margin: 0;
+        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        z-index: 9999;
+        border-radius: 6px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+        /* EACH ITEM STACKS VERTICALLY */
+        .main-nav ul li.dropdown > .dropdown-menu li {
+            display: block; /* KEY FIX */
+            width: 100%;
+        }
+
+            /* LINK STYLING */
+            .main-nav ul li.dropdown > .dropdown-menu li a {
+                display: block;
+                width: 100%;
+                padding: 10px 18px;
+                font-size: 14px;
+                color: #fff;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+
+                /* Hover effect */
+                .main-nav ul li.dropdown > .dropdown-menu li a:hover {
+                    background: #f4c430;
+                    color: #000;
+                }
+
+    /* SHOW ON HOVER */
+    .main-nav ul li.dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
 
 
 
+/* PREMIUM ALUMINIUM SECTION */
+.aluminium-premium {
+    color: #eaeaea;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    max-width: 900px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.premium-card {
+    background: linear-gradient(145deg, #121212, #1b1b1b);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+    .premium-card h2 {
+        color: #ffd166;
+        margin-bottom: 15px;
+    }
+
+.premium-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .premium-list li {
+        padding-left: 28px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+        .premium-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #4dd0e1;
+            font-weight: bold;
+        }
+
+.muted {
+    color: #aaaaaa;
+}
+
+/* PRICE CHART */
+/* PREMIUM PRICE CHART */
+.price-card {
+    background: #111; /* Dark background for premium look */
+    border-radius: 12px;
+    padding: 25px 20px;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+    .price-card h2 {
+        color: #ffd700; /* Gold */
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    .price-card .muted {
+        color: #bbb;
+        margin-bottom: 25px;
+        font-size: 0.95rem;
+    }
+
+.price-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 320px;
+    gap: 14px;
+    padding: 20px 10px 60px; /* extra bottom for labels */
+    position: relative;
+}
+
+    /* EACH BAR COLUMN */
+    .price-chart .bar {
+        position: relative;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* GOLD BAR */
+    .price-chart .fill {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        width: 60%;
+        height: var(--fill-height);
+        background: linear-gradient( 180deg, #00dcff 0%, #8dc542 60%, #c99700 100%);
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 0 18px rgba(255,215,0,0.7), inset 0 0 8px rgba(255,255,255,0.25);
+        animation: growBar 1.4s ease-out forwards;
+        z-index: 1;
+        /* inside text alignment (if used) */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 6px;
+    }
+
+        /* TEXT INSIDE BAR (BLACK) */
+        .price-chart .fill .inside-text {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.9;
+        }
+
+    /* % GROWTH — ABOVE BAR */
+    .price-chart .growth {
+        position: absolute;
+        bottom: calc(var(--fill-height) + 10px);
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #00ff9c; /* premium green */
+        text-shadow: 0 0 6px rgba(0,0,0,0.8);
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    /* PRICE — BELOW BAR */
+    .price-chart em {
+        position: absolute;
+        bottom: -42px;
+        font-size: 0.85rem;
+        font-style: normal;
+        font-weight: 600;
+        color: #ffd700;
+        z-index: 2;
+    }
+
+    /* YEAR — VERY BOTTOM */
+    .price-chart span {
+        position: absolute;
+        bottom: -62px;
+        font-size: 0.75rem;
+        color: #ccc;
+        z-index: 2;
+    }
+
+/* ANIMATION */
+@keyframes growBar {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: var(--fill-height);
+    }
+}
+
+/* HOVER EFFECT */
+.price-chart .bar:hover .fill {
+    filter: brightness(1.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .price-chart {
+        gap: 8px;
+        height: 220px;
+        padding-bottom: 70px;
+    }
+
+        .price-chart span,
+        .price-chart em,
+        .price-chart .growth {
+            font-size: 0.7rem;
+        }
+}
+
+
+/* CTA */
+.cta-dark {
+    text-align: center;
+    padding: 40px;
+    background: radial-gradient(circle at top, #2a2a2a, #111);
+    border-radius: 18px;
+    margin-top: 50px;
+}
+
+    .cta-dark h3 {
+        color: #ffd166;
+    }
+
+    .cta-dark p {
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    /*This advanced price*/
+
+/* ADVANCED MARKET INSIGHTS */
+.market-insights {
+    margin-top: 60px;
+    padding: 40px;
+    background: linear-gradient( 180deg, #0b0b0b 0%, #111 100% );
+    border-radius: 18px;
+    box-shadow: 0 0 40px rgba(255,215,0,0.08);
+}
+
+    .market-insights h2 {
+        color: #ffd700;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.insight-box {
+    background: #0f0f0f;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid rgba(255,215,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .insight-box:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(255,215,0,0.2);
+    }
+
+    .insight-box h3 {
+        color: #ffcc33;
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+    }
+
+    .insight-box p {
+        color: #ccc;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+.insight-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255,215,0,0.25);
+    text-align: center;
+}
+
+    .insight-footer p {
+        color: #ddd;
+        font-size: 0.95rem;
+    }
+/* Global Import Trend*/
+
+/* IMPORT DEMAND MAP */
+.import-demand {
+    margin-top: 70px;
+    padding: 42px;
+    border-radius: 18px;
+    background: radial-gradient( circle at top, #141414 0%, #0b0b0b 60% );
+    box-shadow: 0 0 45px rgba(255,215,0,0.12);
+}
+
+    .import-demand h2 {
+        text-align: center;
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+
+    .import-demand .center {
+        text-align: center;
+    }
+
+.country-grid {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.country-card {
+    background: #0f0f0f;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,215,0,0.18);
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+    .country-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 38px rgba(255,215,0,0.25);
+    }
+
+    .country-card h3 {
+        color: #ffcc33;
+        margin-bottom: 12px;
+        font-size: 1.15rem;
+    }
+
+    .country-card ul {
+        margin: 12px 0;
+        padding-left: 18px;
+    }
+
+        .country-card ul li {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+.demand {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+    .demand span {
+        color: #ffd700;
+        font-weight: 700;
+    }
+
+.country-card .note {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #9fd3ff;
+}
+
+/* Highlight India */
+.country-card.india {
+    border-color: #ffd700;
+    box-shadow: 0 0 25px rgba(255,215,0,0.35);
+}
+
+/* Buyer Insight Footer */
+.buyer-insight {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px dashed rgba(255,215,0,0.3);
+    text-align: center;
+}
+
+    .buyer-insight p {
+        color: #ddd;
+        font-size: 0.95rem;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .import-demand {
+        padding: 26px;
+    }
+}
+
+/* SCRAP → INGOT MAPPING */
+.scrap-mapping {
+    margin-top: 70px;
+    padding: 46px;
+    border-radius: 20px;
+    background: linear-gradient( 180deg, #101010 0%, #080808 100% );
+    box-shadow: 0 0 50px rgba(255,215,0,0.15);
+}
+
+    .scrap-mapping h2 {
+        text-align: center;
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+
+    .scrap-mapping .center {
+        text-align: center;
+    }
+
+/* Table Layout */
+.mapping-table {
+    margin-top: 36px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,215,0,0.25);
+}
+
+.mapping-row {
+    display: grid;
+    grid-template-columns: 1.2fr 0.9fr 1.4fr 1.5fr;
+    padding: 16px 18px;
+    background: #0e0e0e;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.9rem;
+}
+
+    .mapping-row:nth-child(even) {
+        background: #121212;
+    }
+
+    .mapping-row.header {
+        background: #1a1a1a;
+        font-weight: 700;
+        color: #ffd700;
+        border-bottom: 2px solid rgba(255,215,0,0.4);
+    }
+
+    .mapping-row strong {
+        color: #ffcc33;
+    }
+
+    .mapping-row div {
+        color: #ddd;
+    }
+
+    .mapping-row .isri {
+        display: block;
+        font-size: 0.75rem;
+        color: #9aa0a6;
+        margin-top: 4px;
+    }
+
+/* Yield Insight */
+.yield-insight {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px dashed rgba(255,215,0,0.35);
+    text-align: center;
+}
+
+    .yield-insight p {
+        color: #e0e0e0;
+        font-size: 0.95rem;
+    }
+
+/* Hover effect */
+.mapping-row:not(.header):hover {
+    background: #1c1c1c;
+    transition: background 0.25s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .mapping-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+        .mapping-row.header {
+            display: none;
+        }
+}
+
+/* ISRI STANDARDS SECTION */
+.isri-standards {
+    margin-top: 70px;
+    padding: 46px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #0d0d0d 0%, #070707 100%);
+    box-shadow: 0 0 55px rgba(255,215,0,0.18);
+}
+
+    .isri-standards h2 {
+        text-align: center;
+        color: #ffd700;
+        margin-bottom: 12px;
+    }
+
+    .isri-standards .center {
+        text-align: center;
+    }
+
+/* Grid */
+.standards-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 28px;
+    margin-top: 34px;
+}
+
+/* Boxes */
+.standard-box {
+    background: #111;
+    border-radius: 16px;
+    padding: 26px;
+    border: 1px solid rgba(255,215,0,0.25);
+}
+
+    .standard-box h3 {
+        color: #ffcc33;
+        margin-bottom: 16px;
+    }
+
+    /* Table */
+    .standard-box table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.88rem;
+    }
+
+    .standard-box th,
+    .standard-box td {
+        padding: 10px 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .standard-box th {
+        color: #ffd700;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .standard-box td {
+        color: #ddd;
+    }
+
+/* Checklist */
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+    .checklist li {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 10px;
+        color: #ddd;
+    }
+
+        .checklist li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+        }
+
+/* Compliance Note */
+.compliance-note {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255,215,0,0.35);
+    text-align: center;
+}
+
+    .compliance-note p {
+        color: #e0e0e0;
+        font-size: 0.95rem;
+    }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .standards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+3 /* BUYER FAQ */
+.buyer-faq {
+    margin-top: 80px;
+    padding: 48px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #0b0b0b 0%, #050505 100%);
+    box-shadow: 0 0 60px rgba(255,215,0,0.2);
+}
+
+.buyer-faq h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 14px;
+}
+
+.buyer-faq .center {
+    text-align: center;
+}
+
+.faq-list {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+}
+
+.faq-item {
+    background: #111;
+    padding: 26px;
+    border-radius: 16px;
+    border-left: 4px solid #ffd700;
+}
+
+    .faq-item h3 {
+        color: #ffcc33;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .faq-item p {
+        color: #ddd;
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .faq-item.highlight {
+        grid-column: span 2;
+        border-left-color: #ffb700;
+        background: linear-gradient(180deg, #141414 0%, #0d0d0d 100%);
+    }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .faq-list {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-item.highlight {
+        grid-column: span 1;
+    }
+}
+
+
+/* LIVE LME PRICE */
+.lme-live {
+    margin-top: 90px;
+    padding: 52px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #0a0a0a 0%, #040404 100%);
+    box-shadow: 0 0 70px rgba(255,215,0,0.25);
+}
+
+.lme-live h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 12px;
+}
+
+.lme-live .center {
+    text-align: center;
+}
+
+.lme-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.lme-box {
+    background: #111;
+    padding: 28px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,215,0,0.25);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.lme-box:hover {
+    transform: translateY(-6px);
+}
+
+.lme-box h3 {
+    color: #ffcc33;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+    .lme-box .price {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #3cff8f;
+    }
+
+        .lme-box .price.gold {
+            color: #3cff8f;
+        }
+
+.lme-box .price.up {
+    color: #3cff8f;
+}
+
+.lme-box .note {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.lme-box.wide {
+    grid-column: span 3;
+    text-align: left;
+}
+
+.lme-box .explain {
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Footer insight */
+.lme-footer {
+    margin-top: 36px;
+    padding: 18px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgba(255,215,0,0.15), transparent);
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .lme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lme-box.wide {
+        grid-column: span 1;
+    }
+}
